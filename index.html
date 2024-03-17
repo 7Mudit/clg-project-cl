@@ -17,6 +17,17 @@
     />
 
     <style>
+      /* Increase z-index */
+      #bp-web-widget-container {
+        z-index: 9999 !important; /* Adjust the class name based on the actual class used by the chatbot */
+      }
+      #bp-web-widget {
+        z-index: 9999 !important; /* Adjust the class name based on the actual class used by the chatbot */
+      }
+      .bpw-layout {
+        min-width: 320px !important;
+      }
+
       .corefeaturesection {
         background-size: 100% 100%;
         padding-top: 12rem;
@@ -2196,6 +2207,8 @@
         lazySocket: true,
         themeName: "prism",
         botName: "Bank Buddy",
+        stylesheet:
+          "https://webchat-styler-css.botpress.app/prod/1c628c8b-5406-488d-b759-e5ae6e37a317/v55062/style.css",
         frontendVersion: "v1",
         useSessionStorage: true,
         theme: "prism",
